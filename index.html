@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Kapsul Waktu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🕰️ Kapsul Waktu</h1>
+    
+    <div class="instruction">
+        <p><strong>Cara Main:</strong> Tebak tahun kelahiran subjek untuk memecahkan teka-teki dari komen subjek tentang objek yang personal bagi subjek.</p>
+    </div>
+
+    <div class="clue-box">
+        <h3>Cerita Puzzle:</h3>
+        <p id="clue-text">
+            <p>Tak ada yang menyangka bahwa aku sebenarnya orang yang sentimentil dan romantis.</p>
+
+
+<p>Suatu hari di lapangan sekolah, aku hanya bisa duduk menonton pertandingan sparing futsal. Cedera membuatku tak bisa bergabung dengan anak-anak di pertandingan penting ini. Saat bola keluar lapangan dan jatuh ke semak-semak, aku yang bertugas mengambilnya justru menemukan sesuatu yang tak terduga—sebuah cincin perak.
+
+Aku termenung menatapnya. Kilauannya sederhana, tapi entah kenapa terasa memikat. Di saat itulah aku teringat padanya.
+
+Gadis manis yang baru masuk ke sekolah kami. Awalnya aku heran mengapa sekolah mau menerima siswi baru di tahun ketiga, padahal Ujian Nasional begitu sensitif bagi reputasi sekolah. Namun seperti pihak sekolah, aku pun merasa ia berbeda—istimewa.
+
+Cincin itu kusimpan. Di rumah, aku berandai-andai: haruskah aku memberikannya padanya? Haruskah aku menyatakan perasaanku?
+
+Lewat halaman Facebook, aku tahu dia tak punya kekasih. Tapi dia tergila-gila pada film-film superhero—memasang foto aktor Hollywood, fan-girling tanpa malu. Selama ini aku terlalu fokus mengejar juara futsal; dunia bioskop hampir tak pernah kuikuti. Tapi mungkin ini kesempatanku mendekatinya.
+
+Aku memberanikan diri mengajaknya.</p>
+
+
+<p>Dan dia mau.</p>
+
+
+<p>Bahagiaku bukan main saat dia mengatakan iya. Aku bahkan rela melewatkan sesi latihan—ini terlalu spesial untuk dilewatkan. Kami sepakat bertemu di bioskop, di sebuah mal, pada waktu yang sudah ditentukan. Aku membeli dua tiket untuk kami berdua.</p>
+
+
+<p>Tapi dia tidak datang.</p>
+
+
+<p>Orang-orang datang dan pergi. Film ini jelas sangat ditunggu-tunggu—tentang para superhero terkenal yang berkumpul melawan satu penjahat besar. Bahkan anak-anak bercelana abu-abu sepertiku memenuhi lobi bioskop. Aku masih berharap, meski jauh di dalam hati aku sudah tahu: dia tak akan datang.
+
+Dua tiket itu akhirnya kubuang. Bersamaan dengan harapanku.</p>
+
+
+<p>Hari berikutnya tak lebih baik. Kami berpapasan di sekolah, tapi aku melihat ia berusaha menghindar. Aku pun tak berani mengonfrontasinya. Aku tak ingin membuat segalanya lebih buruk dari yang sudah terjadi.
+
+Teman-teman setimku marah karena aku melewatkan latihan penting menjelang turnamen cup yang sudah dekat.
+
+Cincin perak itu kusimpan di dalam lemari. Aku berharap suatu hari ada orang lain yang lebih pantas memilikinya. Namun bertahun-tahun berlalu, dan cincin itu masih tetap di sana—belum juga menemukan pemiliknya.</p>
+        </p>
+    </div>
+
+    <div class="input-area">
+        <label>Masukkan 4 Digit Tahun:</label>
+        <input type="number" id="pass" placeholder="0000" oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);">
+        
+        <label>Alasan/Analisis Kamu:</label>
+        <textarea id="reason" rows="3" placeholder="Tulis alasanmu di sini..."></textarea>
+    </div>
+
+    <button onclick="checkPuzzle()">Cek Jawaban</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
